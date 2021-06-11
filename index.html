@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -25,6 +26,23 @@
             class="logo-image"
         /></a>
         <nav class="nav">
+          <button class="menu-button">
+            <span class="menu-button-text">Меню</span>
+            <img
+              src="img/menu.svg"
+              alt="icon: burger menu"
+              class="nemu-button-icon"
+            />
+          </button>
+          <button class="menu-button-close">
+            <span class="menu-button-text">закрыть</span>
+            <img
+              src="img/arrow.svg"
+              alt="icon: arrow right"
+              class="menu-close-icon"
+            />
+          </button>
+
           <ul class="nav-menu">
             <li class="nav-menu-item">
               <a href="about.html" class="nav-menu-link">о фильме</a>
@@ -52,7 +70,11 @@
         </div>
         <!-- /.film-text -->
         <div class="button-group">
-          <button class="button button-primery">
+          <a
+            data-fancybox
+            href="https://www.youtube.com/watch?v=kOF4p_bCLJs"
+            class="button button-primary"
+          >
             <img
               width="15"
               src="img/play.svg"
@@ -60,7 +82,7 @@
               class="button-icon"
             />
             <span class="button-text">смотреть трейлер</span>
-          </button>
+          </a>
           <a href="trailer.html" class="button button-link">
             <img
               width="15"
@@ -77,5 +99,8 @@
     </div>
     <!-- /.container -->
     <img src="img/venom.png" alt="photo: venom" class="venom" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
